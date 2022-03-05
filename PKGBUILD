@@ -11,8 +11,6 @@ depends=(mkinitcpio)
 package() {
   mkdir -p $pkgdir/usr/lib/initcpio/{hooks,install}
 
-  echo startdir $startdir
-
   install -o root -g root -m 0644 \
     $startdir/install/message \
     $pkgdir/usr/lib/initcpio/install/message
