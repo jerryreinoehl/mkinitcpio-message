@@ -8,5 +8,6 @@ build() {
 }
 
 help() {
-  echo This hook displays a message
+  echo "This hook displays a message. The message can be set by modifying"
+  echo "the file at /etc/initcpio/message."
 }
