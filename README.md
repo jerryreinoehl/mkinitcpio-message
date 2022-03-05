@@ -15,12 +15,12 @@ To display your distro logo, redirect neofetch output to
 ```
 
 Add `message` to your hooks in `/etc/mkinitcpio.conf`. To display the message
-immediately before asking for luks passphrase, add the `message` directly
+immediately before asking for luks passphrase, add the `message` hook directly
 before the `encrypt` hook.
-```
+<pre>
 HOOKS=(base udev autodetect keyboard keymap consolefont
-       modconf block message encrypt lvm2 filesystems fsck)
-```
+       modconf <b><i>block</i></b> message encrypt lvm2 filesystems fsck)
+</pre>
 
 Rebuild your initramfs.
 ```
