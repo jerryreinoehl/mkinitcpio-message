@@ -1,0 +1,12 @@
+#!/bin/bash
+
+build() {
+  if [ -r /etc/initcpio/message ]; then
+    add_file /etc/initcpio/message $BUILDROOT/message
+    add_runscript
+  fi
+}
+
+help() {
+  echo This hook displays a message
+}
