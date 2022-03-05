@@ -10,13 +10,11 @@ install=mkinitcpio-message.install
 depends=(mkinitcpio)
 
 package() {
-  mkdir -p "$pkgdir/usr/lib/initcpio/"{hooks,install}
-
-  install -o root -g root -m 0644 \
+  install -D -m 0644 \
     "$startdir/install/message" \
     "$pkgdir/usr/lib/initcpio/install/message"
 
-  install -o root -g root -m 0644 \
+  install -D -m 0644 \
     "$startdir/hooks/message" \
     "$pkgdir/usr/lib/initcpio/hooks/message"
 }
