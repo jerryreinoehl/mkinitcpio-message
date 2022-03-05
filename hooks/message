@@ -1,5 +1,5 @@
 #!/usr/bin/ash
 
 run_hook() {
-  [ -r message ] && cat message
+  [ -r /message ] && cat /message
 }

@@ -2,7 +2,7 @@
 
 build() {
   if [ -r /etc/initcpio/message ]; then
-    add_file /etc/initcpio/message $BUILDROOT/message
+    add_file /etc/initcpio/message /message
     add_runscript
   fi
 }
