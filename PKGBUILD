@@ -6,6 +6,7 @@ pkgdesc="mkinitcpio hook to display a message"
 arch=(any)
 url="https://github.com/jerryreinoehl/mkinitcpio-message"
 license=('GPL')
+install=mkinitcpio-message.install
 depends=(mkinitcpio)
 
 package() {
