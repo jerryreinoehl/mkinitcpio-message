@@ -19,7 +19,7 @@ immediately before asking for luks passphrase, add the `message` hook directly
 before the `encrypt` hook.
 <pre>
 HOOKS=(base udev autodetect keyboard keymap consolefont
-       modconf <b><i>block</i></b> message encrypt lvm2 filesystems fsck)
+       modconf block <b><i>message</i></b> encrypt lvm2 filesystems fsck)
 </pre>
 
 Rebuild your initramfs.
