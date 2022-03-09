@@ -1,7 +1,7 @@
 #!/bin/bash
 
 build() {
-  if [ -r /etc/initcpio/message ]; then
+  if [[ -r /etc/initcpio/message ]]; then
     add_file /etc/initcpio/message /message
     add_runscript
   fi
