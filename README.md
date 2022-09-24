@@ -5,7 +5,7 @@ Displays a message during boot. Useful for showing a message or logo before
 asking for luks passphrase.
 
 To change the displayed message, edit the file at `/etc/initcpio/message`.
-This file will be catted during boot.
+This file will be printed during boot.
 
 To display your distro logo, redirect neofetch output to
 `/etc/initcpio/message`.
